@@ -1,4 +1,4 @@
-FROM deian
+FROM debian
 RUN apt-get update
 RUN apt-get upgrade
 RUN wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
