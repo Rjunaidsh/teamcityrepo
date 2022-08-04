@@ -4,15 +4,15 @@ FROM debian
 #RUN apt-get install wget -y
 #RUN wget -O - https://raw.githubusercontent.com/fusionpbx/fusionpbx-install.sh/master/debian/pre-install.sh | sh;
 #RUN cd /usr/src/fusionpbx-install.sh/debian && ./install.sh
-Run apt update
-Run apt install gcc-c++
-Run apt install devtoolset-8-gcc devtoolset-8-gcc-c++
+Run apt-get update
+Run apt-get install gcc-c++
+Run apt-get install devtoolset-8-gcc devtoolset-8-gcc-c++
 Run scl enable devtoolset-8 -- bash
 
-Run apt install cmake
-Run apt install make
-Run apt install -y git 
-Run apt install shellcheck
+Run apt-get install cmake
+Run apt-get install make
+Run apt-get install -y git 
+Run apt-get install shellcheck
 
 
 
