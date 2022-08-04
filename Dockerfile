@@ -8,14 +8,3 @@ RUN sudo apt-get update
 RUN sudo apt-get install build-essential
 RUN sudo apt-get install manpages-dev
 RUN gcc --version
-RUN nano hello.c
-RUN #include <stdio.h>
-int main()
-{
-  printf ("Hello World!\n");
-  return 0;
-}
-RUN CTRL+X
-RUN Y
-RUN gcc hello.c -o hello
-RUN ./hello
